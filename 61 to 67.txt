@@ -1,0 +1,46 @@
+1 ka 1
+
+$(document).ready(function ()
+{
+    $("#main-content").click(function ()
+    {
+        var buttonData = $(this).data("mydata");
+
+        interestingFunction();
+\
+    });
+});
+
+
+1 ka 2 
+
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+
+  <main id="main-content">
+  </main>
+</body>
+
+1 ka 3
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id=”main-content” class=”content”>
+<p class=”render”> First Name : Alex</p>
+<p class=”render” id=”lastName”>Last Name: Bank</p>
+<p class=”render”> Email : alexbank@example.com</p>
+<p class=”render”> Country : Pakistan </p>
+<p class=”render”> contact : +92 300 1234567</p>
+</div>
+<script>
+function myFunction() {
+  var list = document.getElementsByClassName("render")[0];
+  list.getElementsByClassName("child")[0].innerHTML = "Milk";
+}
+</script>
+
+</body>
+</html>
